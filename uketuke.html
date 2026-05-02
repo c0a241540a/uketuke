@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>受付フォーム</title>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7fb;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(1.4);
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #357abd;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>受付フォーム</h2>
+<form id="form">
+
+<!-- 名前 -->
+<div class="section">
+<label>お名前
+<input type="text" name="entry.2057984364" required>
+</label>
+</div>
+<!-- フリガナ -->
+<div class="section">
+<label>フリガナ
+<input type="text" name="entry.1506247483" required>
+</label>
+</div>
+<!-- 生年月日 -->
+<div class="section">
+<label>生年月日</label>
+<input type="number" name="entry.680007850_year" placeholder="年">
+<input type="number" name="entry.680007850_month" placeholder="月">
+<input type="number" name="entry.680007850_day" placeholder="日">
+</div>
+<!-- 性別 -->
+ <div class="section">
+<label>性別</label>
+<label><input type="radio" name="entry.2018894118" value="男性">男性</label>
+<label><input type="radio" name="entry.2018894118" value="女性">女性</label>
+<label><input type="radio" name="entry.2018894118" value="その他">その他</label>
+<label><input type="radio" name="entry.2018894118" value="回答しない">回答しない</label>
+</div>
+<!-- 電話 -->
+<div class="section">
+<label>電話番号
+<input type="text" name="entry.594671801">
+</label>
+</div>
+<!-- 住所 -->
+<div class="section">
+<label>住所
+<input type="text" name="entry.960442709">
+</label>
+</div>
+<!-- 緊急 -->
+<div class="section">
+<label>緊急連絡先
+<input type="text" name="entry.338261087">
+</label>
+</div>
+<!-- 症状（複数選択） -->
+<div class="section">
+<label>本日はどうされました？</label>
+
+<label><input type="checkbox" name="entry.1445869827" value="歯が痛い">歯が痛い</label>
+<label><input type="checkbox" name="entry.1445869827" value="歯ぐきが痛い">歯ぐきが痛い</label>
+<label><input type="checkbox" name="entry.1445869827" value="歯ぐきが腫れた">歯ぐきが腫れた</label>
+<label><input type="checkbox" name="entry.1445869827" value="歯がしみる">歯がしみる</label>
+<label><input type="checkbox" name="entry.1445869827" value="詰め物・被せ物が取れた">詰め物・被せ物が取れた</label>
+<label><input type="checkbox" name="entry.1445869827" value="歯が欠けた">歯が欠けた</label>
+<label><input type="checkbox" name="entry.1445869827" value="入れ歯が合わない">入れ歯が合わない</label>
+<label><input type="checkbox" name="entry.1445869827" value="入れ歯を作りたい">入れ歯を作りたい</label>
+<label><input type="checkbox" name="entry.1445869827" value="クリーニング希望">クリーニング希望</label>
+<label><input type="checkbox" name="entry.1445869827" value="歯石を取りたい">歯石を取りたい</label>
+<label><input type="checkbox" name="entry.1445869827" value="虫歯が無いか診てほしい">虫歯が無いか診てほしい</label>
+<label><input type="checkbox" name="entry.1445869827" value="歯周病が心配">歯周病が心配</label>
+<label><input type="checkbox" name="entry.1445869827" value="口臭が気になる">口臭が気になる</label>
+<label><input type="checkbox" name="entry.1445869827" value="嚙み合わせが気になる">嚙み合わせが気になる</label>
+<label><input type="checkbox" name="entry.1445869827" value="顎が痛い・違和感">顎が痛い・違和感</label>
+<label><input type="checkbox" name="entry.1445869827" value="インプラント相談">インプラント相談</label>
+<label><input type="checkbox" name="entry.1445869827" value="矯正相談">矯正相談</label>
+<label><input type="checkbox" name="entry.1445869827" value="ホワイトニング相談">ホワイトニング相談</label>
+<label><input type="checkbox" name="entry.1445869827" value="セカンドオピニオン">セカンドオピニオン</label>
+<label><input type="checkbox" name="entry.1445869827" value="その他">その他</label>
+</div>
+<!-- 症状のある部位 -->
+<div class="section">
+<label>症状のある部位</label>
+
+<label><input type="checkbox" name="entry.918259190" value="右上">右上</label>
+<label><input type="checkbox" name="entry.918259190" value="右下">右下</label>
+<label><input type="checkbox" name="entry.918259190" value="左上">左上</label>
+<label><input type="checkbox" name="entry.918259190" value="左下">左下</label>
+<label><input type="checkbox" name="entry.918259190" value="上の前歯">上の前歯</label>
+<label><input type="checkbox" name="entry.918259190" value="下の前歯">下の前歯</label>
+<label><input type="checkbox" name="entry.918259190" value="全体的に">全体的に</label>
+<label><input type="checkbox" name="entry.918259190" value="わからない">わからない</label>
+</div>
+<!-- 痛みの程度 -->
+<div class="section">
+<label>痛みの程度</label>
+
+<label><input type="radio" name="entry.1927616851" value="痛みなし">痛みなし</label>
+<label><input type="radio" name="entry.1927616851" value="少し痛い">少し痛い</label>
+<label><input type="radio" name="entry.1927616851" value="我慢できるほどの痛み">我慢できるほどの痛み</label>
+<label><input type="radio" name="entry.1927616851" value="強い痛み">強い痛み</label>
+<label><input type="radio" name="entry.1927616851" value="眠れないほど痛い">眠れないほど痛い</label>
+</div>
+<!-- 痛みが出るタイミング -->
+<div class="section">
+<label>痛みが出るタイミング</label>
+
+<label><input type="checkbox" name="entry.1879773107" value="何もしなくても痛い">何もしなくても痛い</label>
+<label><input type="checkbox" name="entry.1879773107" value="嚙むと痛い">嚙むと痛い</label>
+<label><input type="checkbox" name="entry.1879773107" value="冷たいものでしみる">冷たいものでしみる</label>
+<label><input type="checkbox" name="entry.1879773107" value="温かいものでしみる">温かいものでしみる</label>
+<label><input type="checkbox" name="entry.1879773107" value="甘いものでしみる">甘いものでしみる</label>
+<label><input type="checkbox" name="entry.1879773107" value="歯ブラシで痛い">歯ブラシで痛い</label>
+<label><input type="checkbox" name="entry.1879773107" value="ときどき痛い">ときどき痛い</label>
+<label><input type="checkbox" name="entry.1879773107" value="常に痛い">常に痛い</label>
+<label><input type="checkbox" name="entry.1879773107" value="わからない">わからない</label>
+</div>
+<!-- 病歴 -->
+<div class="section">
+<label>現在治療中、または過去に指摘された病気はありますか？</label>
+
+<label><input type="checkbox" name="entry.1912670495" value="高血圧">高血圧</label>
+<label><input type="checkbox" name="entry.1912670495" value="糖尿病">糖尿病</label>
+<label><input type="checkbox" name="entry.1912670495" value="心臓病">心臓病</label>
+<label><input type="checkbox" name="entry.1912670495" value="腎臓病">腎臓病</label>
+<label><input type="checkbox" name="entry.1912670495" value="脳梗塞・脳出血">脳梗塞・脳出血</label>
+<label><input type="checkbox" name="entry.1912670495" value="肝臓病">肝臓病</label>
+<label><input type="checkbox" name="entry.1912670495" value="喘息">喘息</label>
+<label><input type="checkbox" name="entry.1912670495" value="骨粗鬆症">骨粗鬆症</label>
+<label><input type="checkbox" name="entry.1912670495" value="がん">がん</label>
+<label><input type="checkbox" name="entry.1912670495" value="感染症">感染症</label>
+<label><input type="checkbox" name="entry.1912670495" value="特になし">特になし</label>
+<label><input type="checkbox" name="entry.1912670495" value="その他">その他</label>
+</div>
+<!-- 現在飲んでいる薬はありますか？ -->
+<div class="section">
+<label>現在飲んでいる薬はありますか？</label>
+
+<label><input type="radio" name="entry.873099272" value="ある">ある</label>
+<label><input type="radio" name="entry.873099272" value="ない">ない</label>
+<label><input type="radio" name="entry.873099272" value="わからない">わからない</label>
+</div>
+<!-- 薬の名前 -->
+<div class="section">
+<label>薬の名前
+<input type="text" name="entry.1018320528">
+</label>
+</div>
+<!-- 血液をサラサラにする薬 -->
+<div class="section">
+<label>血液をサラサラにする薬を飲んでいますか？</label>
+
+<label><input type="radio" name="entry.1041911334" value="はい">はい</label>
+<label><input type="radio" name="entry.1041911334" value="いいえ">いいえ</label>
+<label><input type="radio" name="entry.1041911334" value="わからない">わからない</label>
+</div>
+<!-- 骨粗鬆症の薬 -->
+<div class="section">
+<label>骨粗鬆症の薬を飲んだり、注射したことはありますか？</label>
+
+<label><input type="radio" name="entry.17200834" value="はい">はい</label>
+<label><input type="radio" name="entry.17200834" value="いいえ">いいえ</label>
+<label><input type="radio" name="entry.17200834" value="わからない">わからない</label>
+</div>
+<!-- アレルギー -->
+<div class="section">
+<label>アレルギーはありますか？</label>
+
+<label><input type="checkbox" name="entry.643694936" value="薬">薬</label>
+<label><input type="checkbox" name="entry.643694936" value="食べ物">食べ物</label>
+<label><input type="checkbox" name="entry.643694936" value="金属">金属</label>
+<label><input type="checkbox" name="entry.643694936" value="ラテックス">ラテックス</label>
+<label><input type="checkbox" name="entry.643694936" value="アルコール">アルコール</label>
+<label><input type="checkbox" name="entry.643694936" value="麻酔">麻酔</label>
+<label><input type="checkbox" name="entry.643694936" value="特になし">特になし</label>
+<label><input type="checkbox" name="entry.643694936" value="わからない">わからない</label>
+<label><input type="checkbox" name="entry.643694936" value="その他">その他</label>
+</div>
+<!-- アレルギー詳細 -->
+<div class="section">
+<label>アレルギーの詳しい内容
+<textarea name="entry.1535637252" rows="4"></textarea>
+</label>
+</div>
+<!-- 治療の希望 -->
+<div class="section">
+<label>治療についてのご希望</label>
+
+<label><input type="checkbox" name="entry.1936009413" value="保険診療を中心に希望">保険診療を中心に希望</label>
+<label><input type="checkbox" name="entry.1936009413" value="自費診療も説明を聞きたい">自費診療も説明を聞きたい</label>
+<label><input type="checkbox" name="entry.1936009413" value="なるべく歯を抜きたくない">なるべく歯を抜きたくない</label>
+<label><input type="checkbox" name="entry.1936009413" value="なるべく神経を取りたくない">なるべく神経を取りたくない</label>
+<label><input type="checkbox" name="entry.1936009413" value="痛みが少ない治療を希望">痛みが少ない治療を希望</label>
+<label><input type="checkbox" name="entry.1936009413" value="治療回数を少なくしたい">治療回数を少なくしたい</label>
+<label><input type="checkbox" name="entry.1936009413" value="費用を抑えたい">費用を抑えたい</label>
+<label><input type="checkbox" name="entry.1936009413" value="しっかり説明を聞いてから決めたい">しっかり説明を聞いてから決めたい</label>
+</div>
+<!-- 当院を何で知りましたか？ -->
+<div class="section">
+<label>当院を何で知りましたか？</label>
+
+<label><input type="checkbox" name="entry.219164861" value="以前から知っている">以前から知っている</label>
+<label><input type="checkbox" name="entry.219164861" value="Google検索">Google検索</label>
+<label><input type="checkbox" name="entry.219164861" value="Googleマップ">Googleマップ</label>
+<label><input type="checkbox" name="entry.219164861" value="家族・知人の紹介">家族・知人の紹介</label>
+<label><input type="checkbox" name="entry.219164861" value="看板">看板</label>
+<label><input type="checkbox" name="entry.219164861" value="Instagram">Instagram</label>
+<label><input type="checkbox" name="entry.219164861" value="YouTube">YouTube</label>
+<label><input type="checkbox" name="entry.219164861" value="通りすがり">通りすがり</label>
+<label><input type="checkbox" name="entry.219164861" value="その他">その他</label>
+</div>
+<!-- 伝えておきたいこと -->
+<div class="section">
+<label>医院に伝えておきたいこと
+<input type="text" name="entry.1897519724">
+</label>
+</div>
+<!-- メールアドレス -->
+<div class="section">
+<label>メールアドレス
+<input type="email" name="entry.1711011899">
+</label>
+</div>
+</div>
+<button type="submit">送信</button>
+</form>
+<div id="number" style="font-size: 40px; font-weight: bold; text-align: center;">受付番号取得中...</div>
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  fetch("https://docs.google.com/forms/d/e/1FAIpQLSdOWPQo7I3wAiFrZE-7aDQzzv6-l_B5InX57aSHpZW36zewNA/formResponse", {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  });
+
+sessionStorage.setItem("submitted", "true");
+
+    setTimeout(() => {
+      location.reload();
+    }, 1000);
+
+  alert("送信しました");
+});
+setTimeout(() => {
+  fetch("https://script.google.com/macros/s/AKfycby6_iTpFcVMV9zCm-9yZDWBQ3Gx9NbJ-Va3lJNIxr0YafP2HR9FbSOD77owqvNn6lUg_w/exec")
+}, 4000);
+
+fetch("https://script.google.com/macros/s/AKfycby6_iTpFcVMV9zCm-9yZDWBQ3Gx9NbJ-Va3lJNIxr0YafP2HR9FbSOD77owqvNn6lUg_w/exec")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("number").innerText =
+      "あなたの受付番号は " + data.number + " です";
+  });
+window.addEventListener("load", () => {
+  if (sessionStorage.getItem("submitted")) {
+    // フラグ消す（これが超重要）
+    sessionStorage.removeItem("submitted");
+  }
+});
+</script>
+
+</body>
+</html>
