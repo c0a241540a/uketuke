@@ -23,7 +23,7 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-h3 {
+p {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -73,6 +73,7 @@ button:hover {
 <body>
 <div class="container">
 <h2>受付フォーム</h2>
+<p>正確に入力してください<br>生年月日など例通りに適切に入力されていない場合送信されません<br>送信後は送信ボタンの下の受付番号を確認してください</p>
 <form id="form">
 
 <!-- 名前 -->
@@ -89,7 +90,7 @@ button:hover {
 </div>
 <!-- 生年月日 -->
 <div class="section">
-<label>生年月日</label>
+<label>生年月日 例「年 2000 月 1 日 10」</label>
 <input type="number" name="entry.680007850_year" placeholder="年">
 <input type="number" name="entry.680007850_month" placeholder="月">
 <input type="number" name="entry.680007850_day" placeholder="日">
@@ -104,7 +105,7 @@ button:hover {
 </div>
 <!-- 電話 -->
 <div class="section">
-<label>電話番号
+<label>電話番号 例「070-1234-5678」
 <input type="text" name="entry.594671801">
 </label>
 </div>
@@ -284,8 +285,8 @@ button:hover {
 </div>
 <!-- メールアドレス -->
 <div class="section">
-<label>メールアドレス
-<input type="email" name="entry.1711011899">
+<label>メールアドレス<br>「入力することでスマホで受付番号を保管できます。必要ない場合変更しないでください。」
+<input type="text" name="entry.1711011899" value="sanple@g.com">
 </label>
 </div>
 </div>
@@ -314,7 +315,7 @@ sessionStorage.setItem("submitted", "true");
 });
 setTimeout(() => {
   fetch("https://script.google.com/macros/s/AKfycby6_iTpFcVMV9zCm-9yZDWBQ3Gx9NbJ-Va3lJNIxr0YafP2HR9FbSOD77owqvNn6lUg_w/exec")
-}, 4000);
+}, 6000);
 
 fetch("https://script.google.com/macros/s/AKfycby6_iTpFcVMV9zCm-9yZDWBQ3Gx9NbJ-Va3lJNIxr0YafP2HR9FbSOD77owqvNn6lUg_w/exec")
   .then(res => res.json())
