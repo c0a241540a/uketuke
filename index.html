@@ -294,7 +294,7 @@ button:hover {
 </form>
 <div id="number" style="font-size: 40px; font-weight: bold; text-align: center;">受付番号取得中...</div>
 <div style="margin: 20px; padding: 40px;" align="center">
-  ↑番号が変わっていない場合はエラーです。入力ミスをしないようにしてください。
+  ↑番号が変わっていない場合はエラーです。入力ミスをしないようにしてください。<br>番号が表示されない場合はリロードを押してください。
 </div>
 <button onclick="location.reload()">リロード</button>
 <script>
@@ -313,13 +313,13 @@ sessionStorage.setItem("submitted", "true");
 
     setTimeout(() => {
       location.reload();
-    }, 2000);
+    }, 3000);
 
   alert("送信しました");
 });
 setTimeout(() => {
   fetch("https://script.google.com/macros/s/AKfycby6_iTpFcVMV9zCm-9yZDWBQ3Gx9NbJ-Va3lJNIxr0YafP2HR9FbSOD77owqvNn6lUg_w/exec")
-}, 6000);
+}, 10000);
 
 fetch("https://script.google.com/macros/s/AKfycby6_iTpFcVMV9zCm-9yZDWBQ3Gx9NbJ-Va3lJNIxr0YafP2HR9FbSOD77owqvNn6lUg_w/exec")
   .then(res => res.json())
